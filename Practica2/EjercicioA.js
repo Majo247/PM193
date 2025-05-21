@@ -8,5 +8,6 @@ const persona = {
     }
 }
 
+
 const persona2 = {nombre, edad, dieccion: {ciudad, pais} } = persona;
 console.log("Me llamo " + nombre + " tengo " + edad + " años y vivo en " + ciudad + ", " + pais);

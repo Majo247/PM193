@@ -6,6 +6,7 @@ const productos = [
 ]
 
 
+
 const paso1 = productos.filter(producto => producto.precio >= 1000);
 
 const nombres = paso1.map(filtrar => filtrar.nombre);
