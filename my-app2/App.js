@@ -6,12 +6,12 @@ import React, {useState} from 'react';//Para omenzar el useState para el estado 
 
 
 //componente Propio de Texto
-const Texto= ()=>{
+const Texto= ({style})=>{
   const [contenido, setContenido]=useState('Hola Mundo')//Para cambiar el texto del boton al presionar
   const actualizaTexto=()=>{setContenido('Estado modificado')}//Para cambiar el hola mundo por otro tecto
   
   return (
-    <Text onPress={actualizaTexto}> {contenido} </Text>
+    <Text style={[styles.text,style]} onPress={actualizaTexto}> {contenido} </Text>// est aparte la modificamos para 
     
    
   );
@@ -25,11 +25,11 @@ export default function App() {
 
     <View style={styles.container}>
 
-    
-      <Texto ></Texto>
-      <Texto ></Texto>
-      <Texto ></Texto>
-      <Button title = {botonContenido} onPress={cambiarTextoBoton}></Button> //En esta parte se cambia el texto del boton al presionar por lo que el onPress
+      
+      <Texto style={styles.azul}></Texto>
+      <Texto style={styles.verde}></Texto>
+      <Texto style={styles.negro}></Texto>
+      
       <StatusBar style="auto" />
 
     </View>
@@ -42,7 +42,16 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
+    alignItems: 'strech',
     justifyContent: 'center',
+    
   },
+  text: {
+    color: 'white',
+    fontSize: 27,
+   
+  },
+  azul: {backgroundColor: 'blue'},
+  verde: {backgroundColor: 'green'},
+  negro: {backgroundColor: 'black'},
 });
