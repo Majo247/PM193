@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-native-element": "^1.2.1",
+    "react-native-paper": "^5.14.5"
+  }
+}
