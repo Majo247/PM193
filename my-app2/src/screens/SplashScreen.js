@@ -1,13 +1,13 @@
 import React from 'react';
 import { View , Text, StyleSheet, Image } from 'react-native';
-import { ImageBackground } from 'react-native-web';
+
 
 const SplashScreen = () => {
   return (
-    <View style={styles.logoo}
+    <View style={styles.container}
         resizeMode="contain">
         <Image
-            source={require('C:/Users/cruzs/PycharmProjects/PM193/my-app2/src/assets/Captura de pantalla 2025-06-23 224351.png')}
+            source={require('C:/Users/cruzs/PycharmProjects/PM193/my-app2/src/assets/Imagen 2.jpeg')}
             style={styles.logo}
             resizeMode="contain"/> 
         <Text style={styles.tittle}>

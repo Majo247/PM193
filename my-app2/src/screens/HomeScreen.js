@@ -5,7 +5,7 @@ import { View , Text, StyleSheet, ImageBackground, SafeAreaView } from 'react-na
 const HomeScreen = () => {
   return (
         <ImageBackground
-            source={require('C:/Users/cruzs/PycharmProjects/PM193/my-app2/src/assets/Captura de pantalla 2025-06-23 224334.png')}
+            source={require('C:/Users/cruzs/PycharmProjects/PM193/my-app2/src/assets/Imagen (1).jpeg')}
             style={styles.background}>
                 <SafeAreaView style={styles.content}>
                     <Text style={styles.text}>
@@ -19,7 +19,7 @@ const HomeScreen = () => {
 export default HomeScreen;
 
 const styles = StyleSheet.create({
-    container: {
+    background: {
         flex: 1,
         justifyContent: 'center',
     },
